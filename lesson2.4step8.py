@@ -11,7 +11,6 @@ link =  "http://suninjuly.github.io/explicit_wait2.html"
 def calc(x):
     return str(math.log(abs(12*math.sin(int(x)))))
 
-
 try:
     browser = webdriver.Chrome()
     browser.get(link)
@@ -27,7 +26,6 @@ try:
     input1.send_keys(y)
     button2 = browser.find_element_by_id("solve")
     button2.click()
-
 
 finally:
     # успеваем скопировать код за 30 секунд
